@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class dummyAPI extends Controller
 {
-    function getData(){
+    function getData(int $id){
+        var_dump($id);
         return  ["name"=>"hello"];
     }
 }
